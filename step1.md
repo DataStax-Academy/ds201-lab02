@@ -45,7 +45,7 @@ clear
 /workspace/ds201-lab02/apache-cassandra-4.1.0/bin/cqlsh
 ```
 
-✅ Create a keyspace called killrvideo. Use SimpleStrategy for the replication class with a replication factor of one.
+✅ Create a keyspace called *killrvideo*. Use `SimpleStrategy` for the replication class with a replication factor of one.
 ```
 CREATE KEYSPACE killrvideo
 WITH replication = {
@@ -59,7 +59,15 @@ WITH replication = {
 use killrvideo;
 ```
 
-This lab uses a single Cassandra instance. (Subsequent labs will use a multi-node Cassandra cluster.)
+✅ Create a table called `videos` with columns `video_id` of type `TIMEUUID`, `added_date` of type `TIMESTAMP` and `title` of type `TEXT`. Designate `video_id` as the primary key.
+```
+CREATE TABLE videos (
+  video_id TIMEUUID,
+  added_date TIMESTAMP,
+  title TEXT,
+  PRIMARY KEY (video_id)
+);
+```
 
 
 <!-- NAVIGATION -->

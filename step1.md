@@ -33,11 +33,10 @@ The video metadata is made up of:
 |title          |text          |
 
 
-
-✅ Download the Cassandra tarball from an Apache CDN:
+✅ Use `nodetool` to verify that Cassandra is running:
 ```
-curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
-        --output apache-cassandra-4.1.0-bin.tar.gz
+cd /workspace/ds201-lab01/apache-cassandra-4.1.0/bin/
+./nodetool status
 ```
 
 ✅ View the downloaded tarball:

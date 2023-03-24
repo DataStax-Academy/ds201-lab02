@@ -1,4 +1,4 @@
-# DS201 Exercise 01
+# DS201 Exercise 02
 
 ## Cassandra Query Language -- CQL
 

@@ -6,7 +6,7 @@ tasks:
       curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
       tar xf apache-cassandra-4.1.0-bin.tar.gz
-      cd /workspace/ds201-lab01/apache-cassandra-4.1.0/bin
+      cd /workspace/ds201-lab02/apache-cassandra-4.1.0/bin
       ./cassandra
     init: |
       pip install -U cqlsh

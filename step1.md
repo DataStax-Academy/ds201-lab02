@@ -36,25 +36,26 @@ The video metadata is made up of:
 
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
 ```
-cd /workspace/ds201-lab02/apache-cassandra-4.1.0/bin/
-./nodetool status 
+/workspace/ds201-lab02/apache-cassandra-4.1.0/bin/nodetool status
 ```
 
-✅ View the downloaded tarball:
+✅ Start the command line tool `cqlsh`:
 ```
-ls -l
-```
-
-✅ Extract tarball:
-```
-tar xf apache-cassandra-4.1.0-bin.tar.gz
+/workspace/ds201-lab02/apache-cassandra-4.1.0/bin/cqlsh
 ```
 
-The directory should now contain the tarball and the `apache-cassandra-4.1.0` directory
-
-✅ View the directory:
+✅ Create a keyspace called killrvideo. Use SimpleStrategy for the replication class with a replication factor of one.
 ```
-ls -l
+CREATE KEYSPACE killrvideo
+WITH replication = {
+  'class':'SimpleStrategy', 
+  'replication_factor': 1
+};
+```
+
+✅ *Use* the keyspace:
+```
+use killrvideo;
 ```
 
 This lab uses a single Cassandra instance. (Subsequent labs will use a multi-node Cassandra cluster.)

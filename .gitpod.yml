@@ -3,9 +3,8 @@ tasks:
     before: |
       printf 'export PATH="$HOME%s:$PATH"\n' "/.astra/cli" >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
-      mkdir data
       curl https://katapod-file-store.s3.us-west-1.amazonaws.com/ds201/videos.csv \
-        --output data/videos.csv
+        --output data-files/videos.csv
       curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
       tar xf apache-cassandra-4.1.0-bin.tar.gz

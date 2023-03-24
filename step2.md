@@ -43,6 +43,24 @@ VALUES (95fe9800-2c2f-11b2-8080-808080808080, '2020-01-20', 'Cassandra Data Mode
 SELECT * from videos;
 ```
 
+✅ Delete all previously inserted rows from the table using the `TRUNCATE` statement and verify that the table is empty.
+```
+TRUNCATE videos;
+SELECT * from videos;
+```
+
+✅ Use the `COPY` command to import data into your `videos` table.
+```
+COPY videos(video_id, added_date, title)
+FROM '/workspace/ds201-lab02/data-files/videos.csv'
+WITH HEADER=TRUE;
+```
+
+✅ Retrieve all rows from the table to verify that the table loaded correctly.
+```
+SELECT * from videos;
+```
+
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
  <a href='command:katapod.loadPage?[{"step":"step1"}]'

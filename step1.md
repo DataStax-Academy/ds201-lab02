@@ -26,11 +26,12 @@ Welcome to the KillrVideo company! KillrVideo hired you to build the latest and 
 
 The video metadata is made up of:
 
-|Column Name |Date Type  |
-|------------|-----------|
-|video_id    |timeuuid   |
-|added_date  |timestamp  |
-|title       |text       |
+|Column Name    |Date Type     |
+|---------------|--------------|
+|video_id       |timeuuid      |
+|added_date     |timestamp     |
+|title          |text          |
+
 
 
 ✅ Download the Cassandra tarball from an Apache CDN:

@@ -33,10 +33,11 @@ The video metadata is made up of:
 |title          |text          |
 
 
+
 ✅ Use `nodetool` to verify that Cassandra is running:
 ```
-cd /workspace/ds201-lab01/apache-cassandra-4.1.0/bin/
-./nodetool status
+cd /workspace/ds201-lab02/apache-cassandra-4.1.0/bin/
+./nodetool status 
 ```
 
 ✅ View the downloaded tarball:

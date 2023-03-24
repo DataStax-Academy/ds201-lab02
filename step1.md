@@ -31,10 +31,10 @@ The video metadata is made up of:
 |video_id       |timeuuid      |
 |added_date     |timestamp     |
 |title          |text          |
+<br>
+<br>
 
-
-
-✅ Use `nodetool` to verify that Cassandra is running:
+✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
 ```
 cd /workspace/ds201-lab02/apache-cassandra-4.1.0/bin/
 ./nodetool status 

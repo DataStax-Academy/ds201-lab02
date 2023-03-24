@@ -20,18 +20,17 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Download and extract Cassandra</div>
+<div class="step-title">Create and use a keyspace</div>
 
-There are multiple ways to install Cassandra:
-- Linux package managers
-- Docker
-- Tarball
+Welcome to the KillrVideo company! KillrVideo hired you to build the latest and greatest video sharing application on the Internet. Your task is to ramp up on the domain and become acquainted with Apache Cassandra. To start, you are looking into creating a table schema and to load some data.
 
----
-**Note:** You could even skip the install altogether and use [Datastax AstraDB](https://astra.datastax.com) - *Cassandra-as-a-service* in the cloud! 
+The video metadata is made up of:
 
----
-In this lab we will install Cassandra from a Tarball.
+|Column Name |Date Type  |
+|------------|-----------|
+|video_id    |timeuuid   |
+|added_date  |timestamp  |
+|title       |text       |
 
 
 ✅ Download the Cassandra tarball from an Apache CDN:

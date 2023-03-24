@@ -1,6 +1,6 @@
 # DS201 Exercise 02
 
-## Cassandra Query Language<br>CQL
+## Cassandra Query Language (CQL)
 
 **In this hands-on lab, you will:**
 *	Create a keyspace for KillrVideo

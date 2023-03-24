@@ -2,7 +2,7 @@
 <div class="top">
   <img class="scenario-academy-logo" src="https://datastax-academy.github.io/katapod-shared-assets/images/ds-academy-2023.svg" />
   <div class="scenario-title-section">
-    <span class="scenario-title">Start Apache Cassandra™</span>
+    <span class="scenario-title">Cassandra Query Language (CQL)</span>
     <span class="scenario-subtitle">ℹ️ For technical support, please contact us via <a href="mailto:academy@datastax.com">email</a>.</span>
   </div>
 </div>
@@ -17,41 +17,31 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Start Cassandra</div>
+<div class="step-title">Insert and Load Data</div>
 
 
-
-
-✅ Switch to the `apache-cassandra-4.1.0/bin` directory.
+✅ Manually insert a single row into the table using `INSERT` statement.
 ```
-cd /workspace/ds201-lab01/apache-cassandra-4.1.0/bin
-```
-
-✅ View the `bin` directory:
-```
-ls -l
+INSERT INTO videos (video_id, added_date, title)
+VALUES (36b8bac0-6260-11ea-ac4c-87a8af4b7ed0, '2020-03-09', 'Foundations of DataStax Enterprise');
 ```
 
-✅ Start Cassandra:
+✅ Use a `SELECT` statement to retrieve your row from the table.
 ```
-./cassandra
-```
-
-It may take a while for Cassandra to start. 
-
-✅ Run `nodetool` to determine Cassandra's status (you may have to run this command multiple times until Cassandra starts):
-```
-./nodetool status
+SELECT * from vieos;
 ```
 
-You should see the status *Up* and state *Normal* - *UN*.
+✅ Insert another row into the table.
+```
+INSERT INTO videos (video_id, added_date, title) 
+VALUES (95fe9800-2c2f-11b2-8080-808080808080, '2020-01-20', 'Cassandra Data Modeling');
 
-<pre>
-Status=Up/Down
-|/ State=Normal/Leaving/Joining/Moving
---  Address    Load        Tokens  Owns (effective) ...
-UN  127.0.0.1  104.34 KiB  16      100.0%           ...
-</pre>
+```
+
+✅ Retrieve all rows from the table.
+```
+SELECT * from vieos;
+```
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">

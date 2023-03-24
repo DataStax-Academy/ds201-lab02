@@ -20,7 +20,7 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Create and use a keyspace</div>
+<div class="step-title">Create and a keyspace and a table</div>
 
 Welcome to the KillrVideo company! KillrVideo hired you to build the latest and greatest video sharing application on the Internet. Your task is to ramp up on the domain and become acquainted with Apache Cassandra. To start, you are looking into creating a table schema and to load some data.
 

@@ -10,8 +10,6 @@ tasks:
     init: |
     command: | 
       clear
-      echo "Lab Environment Ready"
-
 github:
   prebuilds:
     main: true

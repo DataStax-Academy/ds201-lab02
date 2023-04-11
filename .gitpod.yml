@@ -12,7 +12,6 @@ tasks:
       cd apache-cassandra-4.1.0/bin
       ./cassandra
     init: |
-      pip install -U cqlsh
     command: | 
       clear
       echo "Lab Environment Ready"

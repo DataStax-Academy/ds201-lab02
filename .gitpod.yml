@@ -9,7 +9,7 @@ tasks:
         --output apache-cassandra-4.1.0-bin.tar.gz
       tar xf apache-cassandra-4.1.0-bin.tar.gz
     command: | 
-      cassandra
+      /workspace/ds201-lab02/apache-cassandra-4.1.0/bin/cassandra
 github:
   prebuilds:
     main: true

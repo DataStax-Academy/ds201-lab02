@@ -46,6 +46,9 @@ clear
 ```
 
 ✅ Create a keyspace called *killrvideo*. Use `SimpleStrategy` for the replication class with a replication factor of one.
+
+<details>
+  <summary>Solution</summary>
 ```
 CREATE KEYSPACE killrvideo
 WITH replication = {
@@ -53,6 +56,8 @@ WITH replication = {
   'replication_factor': 1
 };
 ```
+</details>
+
 
 ✅ *Use* the keyspace:
 ```

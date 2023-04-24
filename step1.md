@@ -49,7 +49,7 @@ clear
 
 <details>
   <summary>Solution</summary>
-  
+
 ```
 CREATE KEYSPACE killrvideo
 WITH replication = {
@@ -60,12 +60,20 @@ WITH replication = {
 </details>
 
 
-✅ *Use* the keyspace:
+✅ Switch to the newly created keyspace with the *Use* command:
+<details>
+  <summary>Solution</summary>
+
 ```
 use killrvideo;
 ```
+</details>
 
 ✅ Create a table called `videos` with columns `video_id` of type `TIMEUUID`, `added_date` of type `TIMESTAMP` and `title` of type `TEXT`. Designate `video_id` as the primary key.
+
+<details>
+  <summary>Solution</summary>
+
 ```
 CREATE TABLE videos (
   video_id TIMEUUID,
@@ -74,7 +82,7 @@ CREATE TABLE videos (
   PRIMARY KEY (video_id)
 );
 ```
-
+</details>
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">

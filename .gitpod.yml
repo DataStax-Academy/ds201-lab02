@@ -2,7 +2,7 @@ image: gitpod/workspace-full:2023-02-27-14-39-56
 tasks:
   - name: install-dependencies
     before: |
-      printf 'export PATH="$HOME/apache-cassandra-4.1.0/bin:$PATH" >> $HOME/.bashrc
+      printf 'export PATH="$HOME/apache-cassandra-4.1.0/bin:$PATH"' >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
       curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz

@@ -24,6 +24,21 @@
 
 
 ✅ Manually insert a single row into the table using `INSERT` statement.
+
+<table class="katapod-table">
+  <tr>
+    <th class="katapod-table">video_id</th>
+    <th class="katapod-table">added_date</th>
+    <th class="katapod-table">title</th>
+  </tr>
+  <tr>
+    <td class="katapod-table">36b8bac0-6260-11ea-ac4c-87a8af4b7ed0</td>
+    <td class="katapod-table">2020-03-09</td>
+    <td class="katapod-table">Foundations of DataStax Enterprise</td>
+  <tr>  
+  
+</table>
+
 ```
 INSERT INTO videos (video_id, added_date, title)
 VALUES (36b8bac0-6260-11ea-ac4c-87a8af4b7ed0, '2020-03-09', 'Foundations of DataStax Enterprise');

@@ -28,20 +28,23 @@ The video metadata is made up of:
 
 <table class="katapod-table">
   <tr>
-    <th class="katapod-table">foo</th>
-    <th class="katapod-table">bar</th>
+    <th class="katapod-table">Column Name</th>
+    <th class="katapod-table">Date Type </th>
   </tr>
   <tr>
-    <td class="katapod-table">a</td>
-    <td class="katapod-table">b</td>
+    <td class="katapod-table">video_id</td>
+    <td class="katapod-table">timeuuid</td>
+  <tr>  
+  <tr>
+    <td class="katapod-table">added_date</td>
+    <td class="katapod-table">timestamp</td>
+  <tr>
+    <tr>
+    <td class="katapod-table">title</td>
+    <td class="katapod-table">text</td>
   <tr>
 </table>
 
-|Column Name    |Date Type     |
-|---------------|--------------|
-|video_id       |timeuuid      |
-|added_date     |timestamp     |
-|title          |text          |
 <br>
 
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):

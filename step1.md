@@ -26,6 +26,17 @@ Welcome to the KillrVideo company! KillrVideo hired you to build the latest and 
 
 The video metadata is made up of:
 
+<table class="katapod-table">
+  <tr>
+    <th class="katapod-table">foo</th>
+    <th class="katapod-table">bar</th>
+  </tr>
+  <tr>
+    <td class="katapod-table">a</td>
+    <td class="katapod-table">b</td>
+  <tr>
+</table>
+
 |Column Name    |Date Type     |
 |---------------|--------------|
 |video_id       |timeuuid      |
@@ -36,17 +47,17 @@ The video metadata is made up of:
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
 ```
 clear
-/workspace/ds201-lab02/apache-cassandra-4.1.0/bin/nodetool status
+nodetool status
 ```
 
 ✅ Start the command line tool `cqlsh`:
 ```
-/workspace/ds201-lab02/apache-cassandra-4.1.0/bin/cqlsh
+cqlsh
 ```
 
 ✅ Create a keyspace called *killrvideo*. Use `SimpleStrategy` for the replication class with a replication factor of one.
 
-<details>
+<details class="katapod-details">
   <summary>Solution</summary>
 
 ```
@@ -61,7 +72,7 @@ WITH replication = {
 <br>
 
 ✅ Switch to the newly created keyspace with the *Use* command:
-<details>
+<details class="katapod-details">
   <summary>Solution</summary>
 
 ```
@@ -72,7 +83,7 @@ use killrvideo;
 
 ✅ Create a table called `videos` with columns `video_id` of type `TIMEUUID`, `added_date` of type `TIMESTAMP` and `title` of type `TEXT`. Designate `video_id` as the primary key.
 
-<details>
+<details class="katapod-details">
   <summary>Solution</summary>
 
 ```

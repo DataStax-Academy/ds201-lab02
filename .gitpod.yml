@@ -4,13 +4,12 @@ tasks:
     before: |
       printf 'export PATH="/workspace/ds201-lab02/apache-cassandra-4.1.0/bin:$PATH"' >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
+    init: |
       curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
       tar xf apache-cassandra-4.1.0-bin.tar.gz
-      cassandra
-    init: |
     command: | 
-      clear
+      cassandra
 github:
   prebuilds:
     main: true

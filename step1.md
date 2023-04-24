@@ -49,7 +49,6 @@ The video metadata is made up of:
 
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
 ```
-clear
 nodetool status
 ```
 

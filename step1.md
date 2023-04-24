@@ -49,6 +49,7 @@ clear
 
 <details>
   <summary>Solution</summary>
+  
 ```
 CREATE KEYSPACE killrvideo
 WITH replication = {

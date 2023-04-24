@@ -32,7 +32,6 @@ The video metadata is made up of:
 |added_date     |timestamp     |
 |title          |text          |
 <br>
-<br>
 
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
 ```
@@ -57,8 +56,9 @@ WITH replication = {
   'replication_factor': 1
 };
 ```
-</details>
 
+</details>
+<br>
 
 ✅ Switch to the newly created keyspace with the *Use* command:
 <details>
@@ -68,6 +68,7 @@ WITH replication = {
 use killrvideo;
 ```
 </details>
+<br>
 
 ✅ Create a table called `videos` with columns `video_id` of type `TIMEUUID`, `added_date` of type `TIMESTAMP` and `title` of type `TEXT`. Designate `video_id` as the primary key.
 
@@ -83,7 +84,7 @@ CREATE TABLE videos (
 );
 ```
 </details>
-
+<br>
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
  <a href='command:katapod.loadPage?[{"step":"intro"}]'

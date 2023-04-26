@@ -25,19 +25,9 @@
 
 ✅ Manually insert a single row into the table using an `INSERT` statement.
 
-<table class="katapod-table">
-  <tr>
-    <th class="katapod-table">video_id</th>
-    <th class="katapod-table">added_date</th>
-    <th class="katapod-table">title</th>
-  </tr>
-  <tr>
-    <td class="katapod-table">36b8bac0-6260-11ea-ac4c-87a8af4b7ed0</td>
-    <td class="katapod-table">2020-03-09</td>
-    <td class="katapod-table">Foundations of DataStax Enterprise</td>
-  <tr>  
-  
-</table>
+|`video_id`                 | `added_date` | `title` |
+|---------------------------|--------------|---------|
+| `36b8bac0-6260-11ea-ac4c-87a8af4b7ed0` | 2020-03-09 | Foundations of DataStax Enterprise |
 
 <details class="katapod-details">
   <summary>Solution</summary>
@@ -65,19 +55,9 @@ SELECT * from videos;
 
 ✅ Insert another row into the table.
 
-<table class="katapod-table">
-  <tr>
-    <th class="katapod-table">video_id</th>
-    <th class="katapod-table">added_date</th>
-    <th class="katapod-table">title</th>
-  </tr>
-  <tr>
-    <td class="katapod-table">95fe9800-2c2f-11b2-8080-808080808080</td>
-    <td class="katapod-table">2020-01-20</td>
-    <td class="katapod-table">Cassandra Data Modeling</td>
-  <tr>  
-  
-</table>
+|`video_id`                 | `added_date` | `title` |
+|---------------------------|--------------|---------|
+| `95fe9800-2c2f-11b2-8080-808080808080` | 2020-01-20 | Cassandra Data Modeling |
 
 <details class="katapod-details">
   <summary>Solution</summary>

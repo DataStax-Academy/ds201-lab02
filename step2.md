@@ -38,7 +38,6 @@ VALUES (36b8bac0-6260-11ea-ac4c-87a8af4b7ed0, '2020-03-09', 'Foundations of Data
 ```
 
 </details>
-<br>
 
 ✅ Use a `SELECT` statement to retrieve your row from the table.
 
@@ -50,7 +49,6 @@ SELECT * from videos;
 ```
 
 </details>
-<br>
 
 
 ✅ Insert another row into the table.
@@ -70,7 +68,6 @@ VALUES (95fe9800-2c2f-11b2-8080-808080808080, '2020-01-20', 'Cassandra Data Mode
 ```
 
 </details>
-<br>
 
 
 ✅ Retrieve all rows from the table.
@@ -89,7 +86,6 @@ SELECT * from videos;
 ```
 
 </details>
-<br>
 
 ✅ Use the `COPY` command to import data into your `videos` table.
 ```

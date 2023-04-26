@@ -13,7 +13,7 @@
    class="btn btn-dark navigation-top-left">⬅️ Back
  </a>
 <span class="step-count"> Step 1 of 2</span>
- <a href='command:katapod.loadPage?[{"step":"step3"}]' 
+ <a href='command:katapod.loadPage?[{"step":"step2"}]' 
     class="btn btn-dark navigation-top-right">Next ➡️
   </a>
 </div>
@@ -26,26 +26,11 @@ Welcome to the KillrVideo company! KillrVideo hired you to build the latest and 
 
 The video metadata is made up of:
 
-<table class="katapod-table">
-  <tr>
-    <th class="katapod-table">Column Name</th>
-    <th class="katapod-table">Date Type </th>
-  </tr>
-  <tr>
-    <td class="katapod-table">video_id</td>
-    <td class="katapod-table">timeuuid</td>
-  <tr>  
-  <tr>
-    <td class="katapod-table">added_date</td>
-    <td class="katapod-table">timestamp</td>
-  <tr>
-    <tr>
-    <td class="katapod-table">title</td>
-    <td class="katapod-table">text</td>
-  <tr>
-</table>
-
-<br>
+| Column Name | Data Type |
+|-------------|-----------|
+| video_id    | timeuuid  |
+| added_date  | timestamp |
+| title       | text      |
 
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
 ```

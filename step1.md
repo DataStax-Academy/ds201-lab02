@@ -33,11 +33,13 @@ The video metadata is made up of:
 | title       | text      |
 
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
+
 ```bash
 nodetool status
 ```
 
 ✅ Start the command line tool `cqlsh`:
+
 ```bash
 cqlsh
 ```
@@ -64,6 +66,7 @@ WITH replication = {
 ```bash
 use killrvideo;
 ```
+
 </details>
 
 ✅ Create a table called `videos` with columns `video_id` of type `TIMEUUID`, `added_date` of type `TIMESTAMP` and `title` of type `TEXT`. Designate `video_id` as the primary key.
@@ -79,6 +82,7 @@ CREATE TABLE videos (
   PRIMARY KEY (video_id)
 );
 ```
+
 </details>
 
 <!-- NAVIGATION -->

@@ -87,6 +87,7 @@ SELECT * from videos;
 </details>
 
 ✅ Use the `COPY` command to import data into your `videos` table.
+
 ```cql
 COPY videos(video_id, added_date, title)
 FROM '/workspace/ds201-lab02/data-files/videos.csv'
@@ -94,6 +95,7 @@ WITH HEADER=TRUE;
 ```
 
 ✅ Retrieve all rows from the table to verify that the table loaded correctly.
+
 ```cql
 SELECT * from videos;
 ```

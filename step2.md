@@ -32,7 +32,7 @@
 <details class="katapod-details">
   <summary>Solution</summary>
 
-```
+```cql
 INSERT INTO videos (video_id, added_date, title)
 VALUES (36b8bac0-6260-11ea-ac4c-87a8af4b7ed0, '2020-03-09', 'Foundations of DataStax Enterprise');
 ```
@@ -44,7 +44,7 @@ VALUES (36b8bac0-6260-11ea-ac4c-87a8af4b7ed0, '2020-03-09', 'Foundations of Data
 <details class="katapod-details">
   <summary>Solution</summary>
 
-```
+```cql
 SELECT * from videos;
 ```
 
@@ -61,17 +61,16 @@ SELECT * from videos;
   <summary>Solution</summary>
 
 
-```
+```cql
 INSERT INTO videos (video_id, added_date, title) 
 VALUES (95fe9800-2c2f-11b2-8080-808080808080, '2020-01-20', 'Cassandra Data Modeling');
-
 ```
 
 </details>
 
 
 ✅ Retrieve all rows from the table.
-```
+```cql
 SELECT * from videos;
 ```
 
@@ -80,7 +79,7 @@ SELECT * from videos;
 <details class="katapod-details">
   <summary>Solution</summary>
 
-```
+```cql
 TRUNCATE videos;
 SELECT * from videos;
 ```
@@ -88,14 +87,14 @@ SELECT * from videos;
 </details>
 
 ✅ Use the `COPY` command to import data into your `videos` table.
-```
+```cql
 COPY videos(video_id, added_date, title)
 FROM '/workspace/ds201-lab02/data-files/videos.csv'
 WITH HEADER=TRUE;
 ```
 
 ✅ Retrieve all rows from the table to verify that the table loaded correctly.
-```
+```cql
 SELECT * from videos;
 ```
 

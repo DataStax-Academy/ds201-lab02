@@ -33,12 +33,12 @@ The video metadata is made up of:
 | title       | text      |
 
 ✅ Use `nodetool` to verify that Cassandra is running (you may need to run this multiple times):
-```
+```bash
 nodetool status
 ```
 
 ✅ Start the command line tool `cqlsh`:
-```
+```bash
 cqlsh
 ```
 
@@ -47,7 +47,7 @@ cqlsh
 <details class="katapod-details">
   <summary>Solution</summary>
 
-```
+```cql
 CREATE KEYSPACE killrvideo
 WITH replication = {
   'class':'SimpleStrategy', 
@@ -56,24 +56,22 @@ WITH replication = {
 ```
 
 </details>
-<br>
 
 ✅ Switch to the newly created keyspace with the *Use* command:
 <details class="katapod-details">
   <summary>Solution</summary>
 
-```
+```bash
 use killrvideo;
 ```
 </details>
-<br>
 
 ✅ Create a table called `videos` with columns `video_id` of type `TIMEUUID`, `added_date` of type `TIMESTAMP` and `title` of type `TEXT`. Designate `video_id` as the primary key.
 
 <details class="katapod-details">
   <summary>Solution</summary>
 
-```
+```cql
 CREATE TABLE videos (
   video_id TIMEUUID,
   added_date TIMESTAMP,
@@ -82,7 +80,7 @@ CREATE TABLE videos (
 );
 ```
 </details>
-<br>
+
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
  <a href='command:katapod.loadPage?[{"step":"intro"}]'

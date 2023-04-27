@@ -8,7 +8,7 @@ tasks:
       curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
       tar xf apache-cassandra-4.1.0-bin.tar.gz
-    command: | 
+    command: |
       /workspace/ds201-lab02/apache-cassandra-4.1.0/bin/cassandra
 github:
   prebuilds:
@@ -18,4 +18,4 @@ ports:
     onOpen: ignore
 vscode:
    extensions:
-    - https://github.com/hemidactylus/katapod/releases/download/1.2.0-pre-release/katapod-1.2.0.vsix
+    - https://github.com/DataStax-Academy/katapod/releases/download/stable/katapod-stable.vsix

@@ -27,14 +27,14 @@
 
 <table class="katapod-table">
   <tr>
-    <th class="katapod-table">video_id</th>
-    <th class="katapod-table">added_date</th>
-    <th class="katapod-table">title</th>
+    <th>video_id</th>
+    <th>added_date</th>
+    <th>title</th>
   </tr>
   <tr>
-    <td class="katapod-table">36b8bac0-6260-11ea-ac4c-87a8af4b7ed0</td>
-    <td class="katapod-table">2020-03-09</td>
-    <td class="katapod-table">Foundations of DataStax Enterprise</td>
+    <td>36b8bac0-6260-11ea-ac4c-87a8af4b7ed0</td>
+    <td>2020-03-09</td>
+    <td>Foundations of DataStax Enterprise</td>
   <tr>  
   
 </table>
@@ -67,14 +67,14 @@ SELECT * from videos;
 
 <table class="katapod-table">
   <tr>
-    <th class="katapod-table">video_id</th>
-    <th class="katapod-table">added_date</th>
-    <th class="katapod-table">title</th>
+    <th>video_id</th>
+    <th>added_date</th>
+    <th>title</th>
   </tr>
   <tr>
-    <td class="katapod-table">95fe9800-2c2f-11b2-8080-808080808080</td>
-    <td class="katapod-table">2020-01-20</td>
-    <td class="katapod-table">Cassandra Data Modeling</td>
+    <td>95fe9800-2c2f-11b2-8080-808080808080</td>
+    <td>2020-01-20</td>
+    <td>Cassandra Data Modeling</td>
   <tr>  
   
 </table>

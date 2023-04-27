@@ -28,20 +28,20 @@ The video metadata is made up of:
 
 <table class="katapod-table">
   <tr>
-    <th class="katapod-table">Column Name</th>
-    <th class="katapod-table">Date Type </th>
+    <th>Column Name</th>
+    <th>Date Type </th>
   </tr>
   <tr>
-    <td class="katapod-table">video_id</td>
-    <td class="katapod-table">timeuuid</td>
+    <td>video_id</td>
+    <td>timeuuid</td>
   <tr>  
   <tr>
-    <td class="katapod-table">added_date</td>
-    <td class="katapod-table">timestamp</td>
+    <td>added_date</td>
+    <td>timestamp</td>
   <tr>
     <tr>
-    <td class="katapod-table">title</td>
-    <td class="katapod-table">text</td>
+    <td>title</td>
+    <td>text</td>
   <tr>
 </table>
 

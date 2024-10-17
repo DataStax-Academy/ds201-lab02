@@ -5,7 +5,7 @@ tasks:
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
       printf 'export PATH="/workspace/ds201-lab02/apache-cassandra-4.1.0/bin:$PATH"' >> $HOME/.bashrc
     init: |
-      curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
+      curl https://archive.apache.org/dist/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
       tar xf apache-cassandra-4.1.0-bin.tar.gz
     command: | 
